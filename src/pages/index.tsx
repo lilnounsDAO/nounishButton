@@ -17,7 +17,7 @@ export const Home = (props): JSX.Element => {
   return (
     <div className="flex self-center origin-center justify-center py-80">
       <div className="flex-row">
-        <div className="w-52" id={"special_button"}>
+        <div className="w-52" id={"nounish_button"}>
           <button
             disabled={false}
             onClick={() => {
