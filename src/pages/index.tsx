@@ -1,6 +1,6 @@
-import Fountain from "@components/NounishButton/NounishGlassesPop"
-
 import { useCallback, useEffect, useState } from "react"
+
+import Fountain from "../components/nounishButton/NounishGlassesPop"
 
 export const Home = (props): JSX.Element => {
   const [animate, setAnimate] = useState<boolean>(false)
@@ -15,16 +15,18 @@ export const Home = (props): JSX.Element => {
   }, [])
 
   return (
-    <div className="flex self-center origin-center justify-center py-80">
+    <div className="flex self-center justify-center origin-center py-80">
       <div className="flex-row">
         <div className="w-52" id={"nounish_button"}>
           <button
+            className="flex items-center justify-center w-full h-full p-2 px-10 text-lg font-semibold text-white rounded-lg bg-[#212529] hover:shadow-xl space-x-2"
             disabled={false}
             onClick={() => {
               buttonAction()
             }}
-            title={"nounish"}
-          />
+          >
+            nounish
+          </button>
         </div>
       </div>
     </div>
