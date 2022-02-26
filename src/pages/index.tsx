@@ -5,8 +5,6 @@ import { useCallback, useEffect, useState } from "react"
 export const Home = (props): JSX.Element => {
   const [animate, setAnimate] = useState<boolean>(false)
 
-  const [hash, setHash] = useState<string>("")
-
   useEffect(() => {
     new Fountain()
   }, [])
