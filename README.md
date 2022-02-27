@@ -1,3 +1,3 @@
 # Nounish Button ⌐◨–◨
 
-Customized fork of Rainbow's [Rainbow-Button](https://nextjs-advanced-starter.vercel.app/)
+Customized fork of Rainbow's [Rainbow-Button](https://github.com/rainbow-me/rainbow-button)
