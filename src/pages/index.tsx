@@ -25,7 +25,7 @@ export const Home = (props): JSX.Element => {
               buttonAction()
             }}
           >
-            "⌐◨–◨"
+            ⌐◨–◨
           </button>
         </div>
       </div>
