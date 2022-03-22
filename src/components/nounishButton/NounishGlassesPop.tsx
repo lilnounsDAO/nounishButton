@@ -192,7 +192,7 @@ class Fountain {
     this.mouseX = 0
     this.mouseY = 0
     // ["⌐◨–◨"]
-    this.variants = Glasses.mixed
+    this.variants = Glasses.lilNouns
     this.addHandlers()
     this.loop()
     this.rect = document
