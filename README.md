@@ -8,33 +8,20 @@ Customized fork of Rainbow's [Rainbow-Button](https://github.com/rainbow-me/rain
 
 ### How to use
 
-`` import Fountain from "../components/nounishButton/NounishGlassesPop"``
+`` import NounishButton from "../components/nounishButton/NounishButton"``
+
 
 ```
-const [animate, setAnimate] = useState<boolean>(false)
+  const firstAction = () => {
+    //onclick action you'd want to intiate as the button is animates
+  }
+  
+return (
+    <>
+       <NounishButton buttonId={"one"} buttonAction={firstAction} />
+    </>
+  )
 
-  useEffect(() => {
-    new Fountain()
-  }, [])
-```
-
-```
-  const buttonAction = useCallback(async () => {
-    setAnimate(true)
-    //do something
-  }, [])
-```
-
-```
-  <button
-    className="flex items-center justify-center w-full h-full p-2 px-10 text-lg font-semibold text-white rounded-lg bg-[#212529] hover:shadow-xl space-x-2"
-        disabled={false}
-        onClick={() => {
-            buttonAction()
-            }}
-        >
-        nounish
-    </button>
 ```
 
 ### Customizability - NounishGlassesPop.tsx
