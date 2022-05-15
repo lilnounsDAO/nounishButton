@@ -173,6 +173,7 @@ const Glasses = {
 }
 
 class Fountain {
+  buttonId: string
   limit: number
   particles: Particle[]
   autoAddParticle: boolean
@@ -183,7 +184,8 @@ class Fountain {
   mouseY: number
   rect?: DOMRect
 
-  constructor() {
+  constructor(props: { buttonId: string }) {
+    this.buttonId = props.buttonId
     this.limit = 7
     this.particles = []
     this.autoAddParticle = false
@@ -196,7 +198,7 @@ class Fountain {
     this.addHandlers()
     this.loop()
     this.rect = document
-      ?.getElementById("nounish_button")
+      ?.getElementById(props.buttonId)
       ?.getBoundingClientRect()
   }
 
@@ -223,7 +225,7 @@ class Fountain {
     const tapEnd = isTouchInteraction ? "touchend" : "mouseup"
     const move = isTouchInteraction ? "touchmove" : "mousemove"
 
-    document?.getElementById("nounish_button")?.addEventListener(
+    document?.getElementById(this.buttonId)?.addEventListener(
       move,
       (e) => {
         this.mouseX = e instanceof MouseEvent ? e.pageX : e.touches[0].pageX
@@ -233,7 +235,7 @@ class Fountain {
     )
 
     document
-      ?.getElementById("nounish_button")
+      ?.getElementById(this.buttonId)
       ?.addEventListener(tap, (e: MouseEvent | TouchEvent) => {
         this.mouseX = e instanceof MouseEvent ? e.pageX : e.touches[0].pageX
         this.mouseY = e instanceof MouseEvent ? e.pageY : e.touches[0].pageY
