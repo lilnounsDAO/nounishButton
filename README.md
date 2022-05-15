@@ -13,7 +13,7 @@ Customized fork of Rainbow's [Rainbow-Button](https://github.com/rainbow-me/rain
 
 ```
   const firstAction = () => {
-    //onclick action you'd want to intiate as the button is animates
+    //onclick action you'd want to intiate as the button animates
   }
   
 return (
